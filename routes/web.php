@@ -8,7 +8,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-
+Route::get('/system', function () {
+    return view('system');
+});
 
 //With Controller
 Route::get('/users/list',[StudentsController::class,'index']);
